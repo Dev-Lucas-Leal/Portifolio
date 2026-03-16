@@ -1,0 +1,98 @@
+.projetos{
+    padding: 100px 8%;
+    background: linear-gradient(180deg,#0f172a,#0b1120);
+    width: 100%;
+}
+.tituloProjetos{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg,#00bfff,#0070f3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.containerProjetos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.projetoCard{
+    width: 360px;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.projetoCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.3);
+}
+.img{
+    overflow: hidden;
+   
+}
+.fotoproj{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    transition: 0.4s ease;
+}
+.card:hover .fotoproj{
+    transform: scale(1.05);
+}
+.conteudo{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.conteudo h3{
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+.conteudo p{
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.linguagensUtilizadas{
+    display: flex;
+    gap: 12px;
+}
+.linguagensUtilizadas img{
+    width: 28px;
+    height: 28px;
+    filter: grayscale(100%);
+    transition: 0.3 ease;
+}
+.linguagensUtilizadas img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.verGithub{
+    margin-top: 10px;
+    display: flex;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: linear-gradient(90deg,#38bdf8,#6366f1);
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.verGithub:hover{
+    box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+    transform: scale(1.05);
+}
+@media (max-width: 768px){
+    .projetoCards{
+        width: 100%;
+    }
+}

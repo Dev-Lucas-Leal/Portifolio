@@ -1,0 +1,46 @@
+.habilidades {
+  margin-top: 0;
+  width: 100%;  
+  padding: 120px 10%;
+  background: linear-gradient(180deg,#f8fafc 0%,#eef6ff 100%);
+}
+.habilidades h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+.sub {
+  text-align: center;
+  color: #0369a1;
+  margin-bottom: 80px;
+  font-weight: 600;
+}
+.hardContainer {
+  margin-bottom: 100px;
+}
+.softGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 30px;
+}
+.softCard {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 28px;
+  transition: .25s;
+}
+.softCard:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 20px 40px rgba(2,132,199,0.15);
+}
+.softCard h4 {
+  color: #0369a1;
+  margin-bottom: 8px;
+}
+.softCard p {
+  color: #64748b;
+  font-size: 14px;
+}

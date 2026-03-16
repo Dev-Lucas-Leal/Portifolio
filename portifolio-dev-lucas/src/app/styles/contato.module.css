@@ -1,0 +1,199 @@
+.contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 8%;
+    background: linear-gradient(180deg,#f8fafc 0%,#eef6ff 100%);
+    animation: fadeSection 1s ease forwards;
+    opacity: 0;
+}
+@keyframes fadeSection{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contatos a{
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.contatos h2{
+    font-size:42px;
+    margin-bottom: 66px;
+    position: relative;
+    color: #0f172a;
+    text-align: center;
+}
+.contatos h2::after{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 4px;
+    background: linear-gradient(90deg,#2563eb,#38bdf8);
+    display: block;
+    margin: 12px auto 0 ;
+    border-radius: 10px;
+}
+.contContainer{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.contatoEsquerdo{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    min-width: 280px;
+    max-width: 400px;
+}
+.contatoEsquerdo ol{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.contatoEsquerdo li{
+    margin-bottom: 25px;
+}
+.contatoEsquerdo a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #1e293b;
+    padding: 16px 22px;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+.contatoEsquerdo a:hover{
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(37,99,235,0.25);
+    color: #2563eb;
+}
+
+.contatoDireito{
+    flex: 1.2;
+    min-width: 340px;
+    max-width: 680px;
+}
+.formContato{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+.formContato label{
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+.containerDireitaContato{
+   background: rgba(255,255,255,0.75);
+   backdrop-filter: blur(14px);
+   padding: 55px ;
+   border-radius: 22px;
+   box-shadow: 0 20 45px rgba(0,0,0,0.08);
+   transition: all 0.4s ease;
+}
+.containerDireitaContato:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(37,99,235,0.15);
+}
+.containerDireitaContato h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0369a1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.formContato{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.formContato label{
+    font-size: 0.95rem;
+    color: #475569;
+    font-weight: 500;
+}
+.inputNome, .inputEmail, .textarea{
+    width: 100%;
+    padding: 16px ;
+    border-radius: 14px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    background: #f8fafc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.textarea{
+    resize: none;
+    min-height: 140px;
+}
+.inputNome:focus, .inputEmail:focus, .textarea:focus{
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.2);
+    transform: scale(1.02);
+}
+.btnSubmit{
+    margin-top: 17px;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(90deg,#2563eb,#38bdf8);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.btnSubmit:hover{
+    box-shadow: 0 10px 25px rgba(37,99,235,0.4);
+    transform: translateY(-3px);
+}
+.btnSubmit::before{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(90deg,#2563eb,#38bdf8,#2563eb);
+    z-index: -1;
+    border-radius: 14px;
+    opacity: 0;
+    filter: blur(12px);
+    transition: opacity 0.4s ease;
+   
+}
+.btnSubmit:hover::before{
+    opacity: 1;
+}
+.btnSubmit:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(37,99,235,0.4);
+}
+.btnSubmit:active{
+    transform: scale(0.97);
+}
+@media(max-width: 900px){
+    .contContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contatos{
+        padding: 80px 5%;
+    }
+}
