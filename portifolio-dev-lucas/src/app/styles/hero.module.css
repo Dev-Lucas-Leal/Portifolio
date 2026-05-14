@@ -174,6 +174,36 @@
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(0,153,255,0.95);
 }
+@media (max-width: 768px){
+    .sobre{
+        flex-direction: column-reverse;
+        padding: 20px;
+        
+    }
+    .ladoDireito{
+        margin-top: 30px;
+    }
+    .navegacao{
+        display: none;
+    }
+    .sobre h2{
+        text-align: center;
+    }
+    .sobre p{
+        text-align: center;
+    }
+    .sobre h3{
+        text-align: center;
+    }
+    .ladoEsquerdo{
+        align-items: center;
+        justify-content: center;
+    }
+    .btnsHero{
+        display: flex;
+        justify-content: center;
+    }
+}
 .redes{
     display: flex;
     align-items: center;

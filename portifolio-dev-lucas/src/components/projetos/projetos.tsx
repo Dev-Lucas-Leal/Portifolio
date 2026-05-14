@@ -113,7 +113,11 @@ function Projetos(){
                 </div>
                 <div className={styles.projetoCard}>
                     <div className={styles.img}>
-                       
+                       <Image className={styles.fotoproj}
+                        src="/foto-projeto-canil.png"
+                        alt="Foto do projeto To-Do List" 
+                        width={600}
+                        height={400} />
                     </div>
                     <div className={styles.conteudo}>
                         <h3>Canil Extremo Oriental</h3>
